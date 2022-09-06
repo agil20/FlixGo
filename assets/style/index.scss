@@ -144,7 +144,11 @@ justify-content: right;
 
 
 
-
+@media screen and(max-width:1200px) {
+  #aqil{
+    margin-right: 20px;
+  }
+}
 
 @media screen and(max-width:1200px) {
 
@@ -277,11 +281,13 @@ justify-content: right;
                     }
                 }
             }
+         
             .menyu-bugers{
+            
                 display: block;
                 .row{
       
-        justify-content: right;
+                  justify-content: right;
                     .right_burger{
                       display: block;
                         width: 35%;
@@ -300,6 +306,7 @@ justify-content: right;
                     }
                 }
             }
+           
             
         }
        

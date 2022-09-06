@@ -175,6 +175,12 @@ header .menyu-bugers .row .right_burger {
 }
 
 @media screen and (max-width: 1200px) {
+  #aqil {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
   header {
     width: 100%;
     height: 80px;
