@@ -8,11 +8,14 @@
 }
 
 header {
+ 
+  z-index: 2;
   width: 100%;
   height: 80px;
   background-color: #2b2b31;
   -webkit-box-shadow: 0px 0px 5px 3px #2b2b31;
           box-shadow: 0px 0px 5px 3px #2b2b31;
+       
 }
 
 header .container {
@@ -20,6 +23,7 @@ header .container {
 }
 
 header .container .row {
+
   height: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -27,6 +31,7 @@ header .container .row {
 }
 
 header .container .row .header_logo_place {
+ 
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -182,37 +187,142 @@ header .menyu-bugers .row .right_burger ul li a {
   color: white;
 }
 
-header .my_searche {
-  background-color: #4280be;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-header .my_searche .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
+.search_container
+{
+  transform :translatey(-50px);
+  visibility: hidden;
+  transition-duration: 0.5s;
+  width: 100%;
   height: 50px;
-  width: 80%;
+  background-color: #2b2b31;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  border-top: 0.1px solid wheat; ;
+  box-shadow: 0px 0px 5px 3px #2b2b31;
 }
+.slider_icon_btn_place{
+  width: 40px;
+  height: 40px;
+  background-color: #2b2b31;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+  border: 0.2px solid rgb(65, 65, 65);
+  box-shadow: 0px 0px 5px 1px rgb(65, 65, 65);
+}
+.search_row
+{
+  width: 80%;
+ 
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.search_input_nav
+{ 
+  width: 90%;
+  height: 100%;
 
-header .my_searche .row input {
+}
+.button_search{
+  width: 10%;
+  display: flex;
+ align-items: center;
+ 
+}
+.search_input_nav input
+{ 
   width: 100%;
   height: 100%;
-  position: absolute;
+  background-color: #2b2b31;
+  border: none;
+  color: white;
+ 
 }
 
-header .my_searche .row button {
-  width: 10%;
-  position: absolute;
-  height: 100%;
-  right: 0px;
+.button_search button{
+  width: 80%;
+  height: 80%;
+  border-radius: 5%;
+  background-image: linear-gradient(90deg, #ff55a5 0%, #ff5860 100%);
+  box-shadow: 0px 0px 5px 3px wheat;
+  border: none;
 }
+.search_icon
+{
+  cursor: pointer;
+}
+
+.movies
+{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+ 
+}
+.home-title{
+  color: white;
+}
+#slider
+{
+  background-image: url("/assets/img/home__bg3.jpg");
+  padding-top:70px
+}
+.movie-item
+{ 
+  width: 22%;
+  height: 70%;
+
+  
+}
+.img_card
+{
+  width: 100%;
+  height: 80%;
+}
+.img_card img
+{
+  width: 100%;
+  height: 100%;
+}
+.card_title
+{
+  color: white;
+}
+.card_category
+{
+  color: #ff00d7;
+}
+.card_imdb
+{
+  color: #ff00d7;
+}
+.icons
+{
+  display: flex;
+  justify-content: space-around;
+}
+.slidericon
+{
+  color: white;
+  font-size: large;
+  display: flex;
+  gap: 20px;
+
+ 
+}
+.slidericon i
+{
+  background-color: #2b2b31;
+ font-size: 20px;
+}
+
+
 
 @media screen and (max-width: 1200px) {
   header {
@@ -222,8 +332,13 @@ header .my_searche .row button {
     -webkit-box-shadow: 0px 0px 5px 3px #2b2b31;
             box-shadow: 0px 0px 5px 3px #2b2b31;
   }
+  .button_search button {
+    height: 60%;
+  font-size: 8px;
+  }
   header .container {
     height: 100%;
+    z-index: 2;
   }
   header .container .row {
     height: 100%;
@@ -373,3 +488,4 @@ header .my_searche .row button {
   }
 }
 /*# sourceMappingURL=index.css.map */
+
