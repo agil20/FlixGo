@@ -158,26 +158,60 @@ header .container .row .header_search_place .menu-btn {
 
 header .menyu-bugers {
   display: none;
+  width: 99%;
 }
 
 header .menyu-bugers .row {
-  position: relative;
   -webkit-box-pack: right;
       -ms-flex-pack: right;
           justify-content: right;
 }
 
 header .menyu-bugers .row .right_burger {
-  width: 25%;
+  display: block;
+  width: 35%;
   height: 800px;
-  left: 1000px;
   background-color: #2b2b31;
 }
 
-@media screen and (max-width: 1200px) {
-  #aqil {
-    margin-right: 20px;
-  }
+header .menyu-bugers .row .right_burger ul li {
+  padding-top: 15px;
+}
+
+header .menyu-bugers .row .right_burger ul li a {
+  color: white;
+}
+
+header .my_searche {
+  background-color: #4280be;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .my_searche .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  height: 50px;
+  width: 80%;
+}
+
+header .my_searche .row input {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+header .my_searche .row button {
+  width: 10%;
+  position: absolute;
+  height: 100%;
+  right: 0px;
 }
 
 @media screen and (max-width: 1200px) {
